@@ -31,3 +31,21 @@ private:
   string propertyaddress;
   unsigned short term;
 };
+
+Account :: Account(string name, float amount){
+  balance = amount;
+  AccountName = name;
+  yearOpen = 2021;
+}
+
+void Account :: withdrew (float amount){
+  balance= balance-amount;
+}
+
+void Account :: deposit (float amount){
+  balance = balance + amount;
+}
+
+float Account :: getbalance(){
+  return balance;
+}
