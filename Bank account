@@ -1,0 +1,19 @@
+#include <iostream>
+#include <string>
+#include <iomanip>
+
+using namespace std;
+
+class Account{
+public:
+  account(string name, float balance);
+  void withdrew (float amount);
+  void deposit (float amount);
+  float getbalance;
+protected:
+  float balance;
+  string accountname;
+  unsigned short yearOpen;
+private:
+  float ssn;
+}
