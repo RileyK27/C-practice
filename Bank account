@@ -16,4 +16,18 @@ protected:
   unsigned short yearOpen;
 private:
   float ssn;
-}
+};
+
+class Manage : public Account{
+public:
+  Manage (string name, float amount, string address) : Account(name, balance){
+    propertyaddress=name;
+    term = 30:12;
+  }
+  string getname();
+  string getaddress();
+  unsigned short remaining term();
+private:
+  string propertyaddress;
+  unsigned short term;
+};
