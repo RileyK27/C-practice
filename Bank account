@@ -9,7 +9,7 @@ public:
   account(string name, float balance);
   void withdrew (float amount);
   void deposit (float amount);
-  float getbalance;
+  float getbalance();
 protected:
   float balance;
   string accountname;
@@ -38,6 +38,9 @@ Account :: Account(string name, float amount){
   yearOpen = 2021;
 }
 
+int num();
+const int DEPOSIT =1, WITHDREW =2, DETAIL = 3, OPENACC = 4, QUIT=5;
+
 void Account :: withdrew (float amount){
   balance= balance-amount;
 }
@@ -48,4 +51,41 @@ void Account :: deposit (float amount){
 
 float Account :: getbalance(){
   return balance;
+}
+
+string Manage :: accountname(){
+  return Accountname;
+}
+
+unsigned Manage :: remaining term(){
+  return term;
+}
+
+unsigned Manage :: getaddress(){
+  return propertyaddress;
+}
+
+int main(){
+  int a;
+  float amount;
+  a=num();
+  Account * new account =NULL;
+  Manage * new Manage = NULL;
+  
+  while(a!=QUIT){
+    if (a==DEPOSIT){
+    
+    }
+  }
+}
+
+int num(){
+  int menu;
+  cout<<"1) Deposit "<<endl;
+  cout<<"2) Withdrew "<<endl;
+  cout<<"3) Detail "<<endl;
+  cout<<"4) Open account "<<endl;
+  cout<<"5) Quit "<<endl;
+  cin>>n;
+  return menu;
 }
