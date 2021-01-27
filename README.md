@@ -1,3 +1,4 @@
 # C++ language practice
 ------------------------------------------------------------------------   
-## Thhis is for language practice repository
+## This is for language practice repository
+### 1. 
